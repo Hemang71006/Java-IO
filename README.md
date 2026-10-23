@@ -61,17 +61,26 @@ Check the directory-monitoring functionality and verify that the required entrie
 The project follows a Maven directory structure. Class and package names may be updated as the use cases are implemented.
 
 ```text
-Java-IO/
+Java-IO-AddressBook/
 ├── README.md
+├── .gitignore
 ├── pom.xml
 └── src/
     ├── main/
     │   └── java/
     │       └── payroll/
-    │           ├── EmployeePayroll.java
-    │           └── EmployeePayrollService.java
+    │           ├── DirectoryWatchService.java
+    │           ├── EmployeePayrollData.java
+    │           ├── EmployeePayrollService.java
+    │           ├── FileOperations.java
+    │           └── PayrollFileService.java
     └── test/
         └── java/
             └── payroll/
-                └── EmployeePayrollServiceTest.java
+                ├── DirectoryWatchServiceTest.java
+                ├── EmployeePayrollServiceTest.java
+                ├── FileOperationsTest.java
+                ├── PayrollFileServiceTest.java
+                ├── PayrollPrintCountTest.java
+                └── PayrollReadFileTest.java
 ```
